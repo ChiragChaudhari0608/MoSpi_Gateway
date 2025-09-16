@@ -173,7 +173,7 @@ function Profile() {
           </div>
         </div>
         <div>
-          <div className="text-xl font-semibold text-gray-900">{user?.user_name || "-"}</div>
+          <div className="text-xl font-semibold text-gray-900">{user?.username || "-"}</div>
           <div className="text-sm text-gray-500">{user?.email || "-"}</div>
           <div className="text-xs text-gray-400 mt-1">
             Last login: <LastLoginFormatter lastLogin={lastLogin} />

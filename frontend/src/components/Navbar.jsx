@@ -20,7 +20,7 @@ function Navbar({ onMenuClick }) {
   };
 
   return (
-    <nav className="bg-white shadow-sm border-b border-gray-200">
+    <nav className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
       <div className="ml-3 mx-auto max-w-7xl px-4 sm:px-3 lg:px-8 lg:ml-60">
         <div className="flex h-16 justify-between">
           <div className="flex">
@@ -37,7 +37,7 @@ function Navbar({ onMenuClick }) {
                 {/* <div className="h-8 w-8 bg-primary-600 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold text-sm"></span>
                 </div> */}
-                <span className="ml-2 text-[16px] font-semibold text-gray-900 sm:text-xl">Welcome back, {user?.user_name || 'User'}!</span>
+                <span className="ml-2 text-[16px] font-semibold text-gray-900 sm:text-xl">Welcome back, {user?.username || 'User'}!</span>
               </Link>
             </div>
           </div>
@@ -61,7 +61,7 @@ function Navbar({ onMenuClick }) {
                   <span className="sr-only">Open user menu</span>
                   <div className="h-8 w-8 rounded-full bg-primary-600 flex items-center justify-center">
                     <span className="text-white font-medium text-sm">
-                      {user.user_name?.charAt(0).toUpperCase() || 'U'}
+                      {user.username?.charAt(0).toUpperCase() || 'U'}
                     </span>
                   </div>
                 </button>
