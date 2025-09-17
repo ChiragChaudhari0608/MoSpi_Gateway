@@ -13,7 +13,7 @@ The MoSPI API Gateway provides secure access to statistical survey datasets with
 - **Authentication**: JWT-based authentication with role-based access control
 - **Privacy Protection**: Cell suppression, data aggregation, and sensitive variable blocking
 - **Rate Limiting**: Configurable rate limiting for API endpoints
-- **Database**: PostgreSQL with Sequelize ORM
+- **Database**: Supabase (PostgreSQL) with Sequelize ORM
 - **Security**: Helmet, CORS, input validation, and SQL injection protection
 
 ### Frontend (React.js)
@@ -28,7 +28,7 @@ The MoSPI API Gateway provides secure access to statistical survey datasets with
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   React.js      │    │   Express.js    │    │   PostgreSQL    │
+│   React.js      │    │   Express.js    │    │   Supabase      │
 │   Frontend      │◄──►│   Backend API   │◄──►│   Database      │
 │                 │    │                 │    │                 │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
@@ -39,7 +39,7 @@ The MoSPI API Gateway provides secure access to statistical survey datasets with
 ### Backend
 - **Runtime**: Node.js
 - **Framework**: Express.js
-- **Database**: PostgreSQL
+- **Database**: Supabase (PostgreSQL)
 - **ORM**: Sequelize
 - **Authentication**: JWT, bcryptjs
 - **Security**: Helmet, CORS, express-rate-limit
@@ -57,7 +57,6 @@ The MoSPI API Gateway provides secure access to statistical survey datasets with
 ## 📋 Prerequisites
 
 - **Node.js**: 16+ (recommended 18+)
-- **PostgreSQL**: 12+ (for backend)
 - **npm** or **yarn** package manager
 
 ## 🚀 Quick Start
@@ -282,7 +281,7 @@ node -e "require('./config/database').testConnection()"
 ### Backend Deployment
 1. Set production environment variables
 2. Build and deploy to your Node.js hosting service
-3. Configure PostgreSQL database
+3. Configure Supabase (PostgreSQL) database
 4. Set up reverse proxy (nginx recommended)
 
 ### Frontend Deployment
@@ -295,7 +294,7 @@ node -e "require('./config/database').testConnection()"
 ### Common Issues
 
 1. **Database Connection**
-   - Verify PostgreSQL is running
+   - Verify Supabase project is running
    - Check database credentials in `.env`
    - Ensure database exists
 
